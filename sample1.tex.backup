@@ -1,0 +1,18 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+%opening
+\title{My first document with Latex}
+\author{Bama Srinivasan}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+This tutorial will give you a headstart with Latex. 
+\end{abstract}
+\section{Introduction}
+This is the start of the tutorial. We will document this sessions with many paragraphs and sections. First let us put an overview of whatever we have in our mind for this documentation by including sections, which will be visible in Table of Contents.
+\section{Sections, Subsections}
+
+
+\end{document}

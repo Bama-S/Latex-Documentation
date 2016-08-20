@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Sections, Subsections}{2}
+\contentsline {subsection}{\numberline {2.1}Adjusting margin sizes}{2}
+\contentsline {section}{\numberline {3}Packages}{2}
+\contentsline {section}{\numberline {4}Itemize and Enumerate}{2}
+\contentsline {section}{\numberline {5}Tables}{2}
+\contentsline {section}{\numberline {6}Images}{2}
+\contentsline {section}{\numberline {7}Math Equations}{3}
+\contentsline {section}{\numberline {8}Citing References}{3}

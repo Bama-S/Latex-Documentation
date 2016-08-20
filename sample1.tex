@@ -1,0 +1,110 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+
+%opening
+\title{\textbf{Hands-on with \LaTeX for  Research scholars \\ Department of Information Science and Technology \\ CEG Campus, Anna University}}
+\author{\textit{Bama Srinivasan}}
+\date{August 2016}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\begin{abstract}
+This tutorial will give you a headstart with Latex. 
+\end{abstract}
+\section{Introduction}
+This is the start of the tutorial. We will document this sessions with many paragraphs and sections. First let us put an overview of whatever we have in our mind for this documentation by including sections, which will be visible in Table of Contents. 
+\section{Sections, Subsections}
+To add section use \texttt{``\textbackslash section'' } and subsections  \texttt{``\textbackslash subsection"}. Let us add some sections and subsections now.
+\subsection{Adjusting margin sizes}
+First, add the package \texttt{``\textbackslash usepackage[margin=1in]{geometry}"}, to indicate 1in margin on all sides.
+\section{Packages}
+Always add packages at the preamble using the command ``\texttt{usepackage}". If the package is not available, copy the .sty file in your directory and then add those. 
+\section{Itemize and Enumerate}
+We can add bullet points using \texttt{itemize} and \texttt{enumerate}.
+\begin{itemize}
+\item One
+\item Two
+\item Three
+\end{itemize}
+
+\begin{enumerate}
+\item Point one
+\item Point two
+\item Point three
+\end{enumerate}
+
+\section{Tables}
+Let us include a small table with 3 rows and 4 columns in Table \ref{tab:one}.
+\begin{table}[h]
+\begin{center}
+\caption{The first table in Document}
+\label{tab:one}
+\begin{tabular}{|l| m{2 cm} |l|l|}
+\hline
+\textbf{Column1} & \textbf{Column2} & \textbf{Column3} & \textbf{Column4} \\
+\hline
+11 &12&13&14 \\
+\hline
+21&22&23&24\\
+\hline
+31&32&33&34\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+You may have to add the package ``array" for fixed length columns. For more on tables visit \url{https://www.sharelatex.com/learn/Tables}.
+\section{Images}
+To add pictures, use the package ``graphicx" (see in the preamble). Include the path of the picture in \texttt{\textbackslash includegraphics} and place within ``begin" and ``end figure". This would display  the figure as shown in \ref{fig:one}.
+\begin{figure}[h]
+\centering
+\includegraphics[width = 4 cm, height = 2 cm]{images/it}
+\caption{The first figure}
+\label{fig:one}
+\end{figure}
+\section{Math Equations}
+Latex is friendly with mathematical equations. Let us try a few samples. But before that include the package \texttt{amsmath}.  Try  Equation \ref{eq:one} and Equation \ref{eq:two} now.
+\begin{eqnarray}
+\label{eq:one}
+\frac{\frac{1}{x}+\frac{1}{y}}{y-z} \\ 
+\label{eq:two}
+(\varphi \wedge \psi)\leftrightarrow \alpha
+\end{eqnarray}
+
+Then try this matrix representation.
+$$
+M = \begin{bmatrix}
+a_{00} & b_{01} & c_{02}\\[0.3em]
+a_{10} & b_{11} & c_{12}\\[0.3em]
+a_{20} & b_{21} & c_{22} \\[0.3em]
+\end{bmatrix}
+$$
+
+\section{Citing References}
+Refer to the material on \LaTeX \cite{latexcompanion}. One example of the added reference is Einstein's work \cite{einstein} and another on typesetting \cite{knuthwebsite}.
+
+\begin{thebibliography}{9}
+\bibitem{latexcompanion} 
+Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
+\textit{The \LaTeX\ Companion}. 
+Addison-Wesley, Reading, Massachusetts, 1993.
+ 
+\bibitem{einstein} 
+Albert Einstein. 
+\textit{Zur Elektrodynamik bewegter K{\"o}rper}. (German) 
+[\textit{On the electrodynamics of moving bodies}]. 
+Annalen der Physik, 322(10):891–921, 1905.
+ 
+\bibitem{knuthwebsite} 
+Knuth: Computers and Typesetting,
+\\\texttt{http://www-cs-faculty.stanford.edu/\~{}uno/abcde.html}
+\end{thebibliography}
+
+
+\end{document}
